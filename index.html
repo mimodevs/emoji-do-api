@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
-<body>      
-        <div class = "universe">
-            <img src = "Images/galaxy.png" alt = "image of a galaxy">
-         </div>   
-         <header>
-           <img src="/assets/logo.png">
-           <div class="burger-container">
-             <label for="burger" class="burger">&#9776;</label>
-             <input id="burger" type="checkbox"/>
-             <div class="options">
-               <a>About</a>
-               <a>Home</a>
-               <a>Log In</a>
-             </div>  
-         </header>
+<body>  
+    <header>
+        <!-- <img src="/assets/logo.png"> -->
+        <nav class="navbar">
+            <div class="burger-container">
+                <input id="burger-menu" type="checkbox"/>
+                <label for="burger-menu" class="menu__btn">&#9776;</label>
+
+              <ul class="menu__box">
+                <li><a class="menuitem" href="">About</a></li>
+                <li><a class="menuitem" href="">Home</a></li>
+                <li><a class="menuitem" href="">Log In</a></li>
+              </ul>
+            </div>
+        </nav>   
+        <h1>GENERATE YOUR COSMIC QUOTE</h1>  
+    </header>    
+     
+         
         <div class = "banner">
-            <img src = "" alt="image of a floating austronaut">
-            <h1>GENERATE YOUR COSMIC QUOTE</h1>   
+            <img src = "" alt="image of a floating austronaut">   
          </div>
-              
+            
         <main>
             <div class = "quoteCard">
                 <img src = "" alt = "image of a planet">
@@ -60,8 +67,8 @@
                 </div>
                  </div> 
             </div>
-        </main>    
-            
+
+        </main>     
             <footer>
                 <img src = "image of a galaxy">
                 <p>All rights reserved</p>
