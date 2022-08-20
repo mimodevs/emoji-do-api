@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<body>  
-    <header>
-        <!-- <img src="/assets/logo.png"> -->
-        <nav class="navbar">
-            <div class="burger-container">
-                <input id="burger-menu" type="checkbox"/>
-                <label for="burger-menu" class="menu__btn">&#9776;</label>
-
-              <ul class="menu__box">
-                <li><a class="menuitem" href="">About</a></li>
-                <li><a class="menuitem" href="">Home</a></li>
-                <li><a class="menuitem" href="">Log In</a></li>
-              </ul>
-            </div>
-        </nav>   
-        <h1>GENERATE YOUR COSMIC QUOTE</h1>  
-    </header>    
-     
-         
-        <div class = "banner">
-            <img src = "" alt="image of a floating austronaut">   
+<body>
+  <script src="script.js"></script>
+        <div class = "universe">
+            <img src = "" alt = "image of a galaxy">
          </div>
-            
+         <header>
+            <!-- <img src="/assets/logo.png"> -->
+            <nav class="navbar">
+                <div class="burger-container">
+                    <input id="burger-menu" type="checkbox"/>
+                    <label for="burger-menu" class="menu__btn">&#9776;</label>
+                  <ul class="menu__box">
+                    <li><a class="menuitem" href="">About</a></li>
+                    <li><a class="menuitem" href="">Home</a></li>
+                    <li><a class="menuitem" href="">Log In</a></li>
+                  </ul>
+                </div>
+            </nav>
+            <h1>GENERATE YOUR COSMIC QUOTE</h1>
+        </header>
+        <div class = "banner">
+            <img src = "" alt="image of a floating austronaut">
+            <h1>GENERATE YOUR COSMIC QUOTE</h1>
+         </div>
         <main>
             <div class = "quoteCard">
                 <img src = "" alt = "image of a planet">
@@ -40,35 +37,42 @@
             </div>
             <div class = "options">
                 <div class = "settings">
-                    <label for="settings" class="settings"><iconify-icon icon="carbon:settings-adjust"></iconify-icon></label>
-                    <input id="settings" type="checkbox"/>
-
+                    <i><iconify-icon icon="carbon:settings-adjust"></iconify-icon></i>
+                  </div>
+                  <div class = "new-quote">
+                    <p>New Quote</p>
+                    <i><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></i>
+                </div>
+            </div>
                     <div class = "options-pop">
                         <i><iconify-icon icon="akar-icons:cross"></iconify-icon></i>
-                        <div class = "font">
+                       <div class = "options-container">
+                         <div class = "font">
                             <h3>FONT</h3>
-                            <p>Regular <iconify-icon icon="entypo:triangle-down"></iconify-icon></p>
+                            <label for="fonts"></label>
+  <select name="fonts" id="fonts">
+    <option value="regular">Regular</option>
+    <option value="option-2">Option 2</option>
+    <option value="option-3">Option 3</option>
+    <option value="option-4">Option 4</option>
+  </select>
                         </div>
                         <div class = "background">
-                            <i></i>
-                            <i></i>
-                            <i></i>
+                           <h3>BACKGROUND</h3>
+                            <div class = "color-rounds">
+                              <div class = "item color-1">  </div>
+                            <div class = "item color-2">  </div>
+                            <div class = "item color-3">  </div>
+                            </div>
                         </div>
                         <div class = "image">
                             <h3>IMAGE</h3>
                             <i><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></i>
                         </div>
-
                     </div>
                 </div>
-                <div class = "new-quote">
-                    <p>New Quote</p>
-                    <i><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></i>
-                </div>
-                 </div> 
             </div>
-
-        </main>     
+        </main>
             <footer>
                 <img src = "image of a galaxy">
                 <p>All rights reserved</p>
@@ -77,10 +81,8 @@
                     <i class="fab fa-regular fa-alien"></i>
                     <i class="fab fa-regular fa-alicorn"></i>
                   </div>
-            </footer>    
-            
-        <script src="script.js"></script>
-        <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
-
+            </footer>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+   <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
 </body>
 </html>
