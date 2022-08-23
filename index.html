@@ -40,17 +40,17 @@
             </div>
             <div class = "options">
                 <label class="collapse" for="_1">
-                <div class = "settings" id="_1">
-                    <iconify-icon icon="carbon:settings-adjust" id="symbol"></iconify-icon>
+                <div class = "settings" id="_1" onclick="settings()" id="open">
+                    <iconify-icon icon="carbon:settings-adjust" class="symbol" ></iconify-icon>
                   </div>
                 </label>
                   <div class = "new-quote">
                     <p>New Quote</p>
-                    <iconify-icon icon="akar-icons:arrow-cycle" id="symbol"></iconify-icon>
+                    <iconify-icon icon="akar-icons:arrow-cycle" class="symbol"></iconify-icon>
                 </div>
             </div>
-                    <div class = "options-pop">
-                        <iconify-icon icon="akar-icons:cross" id="symbol"></iconify-icon>
+                    <div class = "options-pop" onclick="closeSettings()" id="close">
+                        <iconify-icon icon="akar-icons:cross" class="symbol" ></iconify-icon>
                        <div class = "options-container">
                          <div class = "font">
                             <h3>FONT</h3>
@@ -93,5 +93,6 @@
             </footer>
             <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
             <script src="script.js"></script>
+          
 </body> 
 </html>

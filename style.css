@@ -103,10 +103,15 @@ header h1 {
   width: 20%;
 
 }
-#symbol {
+.symbol {
   font-size: 20px;
   color: white;
 }
+
+#close {
+  display: none;
+}
+
 .menuitem:hover {
   background-color: #CFD8DC;
 }
@@ -148,9 +153,6 @@ main {
   display: flex;
 }
 
-.invisible {
-  display: none;
-}
 
 .quoteCard {
   display: flex;
@@ -239,7 +241,7 @@ height: 133px;
  align-items: center;
 }
 .options-pop {
-  display: none;
+  display: flex;
   flex-direction: row;
   width: 100%;
 height: 133px;
@@ -313,7 +315,7 @@ color: #FFFFFF;
   display:block;
 }
 
-.options-pop #symbol {
+.options-pop .symbol {
   margin-left: 20px;
   margin-top: 20px;
 }
@@ -555,7 +557,7 @@ color: #FFFFFF;
     display: none;
   }
 
-  #symbol {
+  .symbol {
     font-size: 40px;
     color: white;
   }
