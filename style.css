@@ -1,4 +1,8 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   width: auto;
   
@@ -58,7 +62,7 @@ header h1 {
 }
 .menu__btn {
   color:white;
-
+  font-size: 40px;
   cursor: pointer;
 }
 .menu__btn > span,
@@ -83,6 +87,7 @@ header h1 {
   list-style: none;
   background-image: linear-gradient(to bottom, #F37335, #9A1CD0);
   transition-duration: .25s;
+  left: 100%;
 }
 .menuitem {
   display: block;
@@ -97,6 +102,10 @@ header h1 {
 .banner img {
   width: 20%;
 
+}
+#symbol {
+  font-size: 20px;
+  color: white;
 }
 .menuitem:hover {
   background-color: #CFD8DC;
@@ -134,6 +143,15 @@ main {
   background: linear-gradient(to bottom, #542DB0, white);
   
 }
+
+.visible {
+  display: flex;
+}
+
+.invisible {
+  display: none;
+}
+
 .quoteCard {
   display: flex;
    flex-direction: center;
@@ -147,10 +165,10 @@ main {
  }
  .quoteCard img {
   
- height: 100px;
+ height: 80px;
  position:absolute;
  top: -50px;
- left: 220px;
+ left: 80%;
 }
 .quoteCard p {
   position: absolute;
@@ -171,7 +189,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 300px;
+  width: 75%;
   height: 50px;
   margin-bottom: 30px;
 }
@@ -221,7 +239,7 @@ height: 133px;
  align-items: center;
 }
 .options-pop {
-  display: flex;
+  display: none;
   flex-direction: row;
   width: 100%;
 height: 133px;
@@ -327,9 +345,9 @@ color: #FFFFFF;
  }
 
  .quoteCard p {
-  position: absolute;
-  left: 90px;
-  top: 80px;
+  position: flex;
+  
+  top: 32%;
  }
 
  .quoteCard img {
@@ -337,7 +355,7 @@ color: #FFFFFF;
    height: 150px;
    position:absolute;
    top: -50px;
-   left: 300px;
+  
 }
 
  
@@ -435,10 +453,7 @@ line-height: 36px;
 text-align: center;
 color: #FFFFFF;
 }
-
-
 }
-
 
 @media (min-width:992px) {
   main {
@@ -512,7 +527,7 @@ color: #FFFFFF;
     width: 200px;
     position:absolute;
     top: -100px;
-    left: 1400px;
+    left: 90%;
    }
   .options {
     width: 55%;
@@ -525,6 +540,7 @@ color: #FFFFFF;
   }
   .new-quote p {
     font-size: 40px;
+
   }
   .settings {
     height: 80px;
@@ -532,7 +548,8 @@ color: #FFFFFF;
     border-radius: 90px;
   }
   .menu__box {
-    display: none;
+    display: flex;
+    
   }
   #burger-menu {
     display: none;
