@@ -276,13 +276,14 @@ font-size: 20px;
 line-height: 36px;
 text-align: center;
 color: #FFFFFF;
+
 }
 
 
 .collapse{
   cursor: pointer;
   display: block;
-  background: #cdf;
+  background: none;
 }
 .collapse + input{
   display: none; /* hide the checkboxes */
@@ -294,6 +295,10 @@ color: #FFFFFF;
   display:block;
 }
 
+.options-pop #symbol {
+  margin-left: 20px;
+  margin-top: 20px;
+}
 
 
 
@@ -531,5 +536,10 @@ color: #FFFFFF;
   }
   #burger-menu {
     display: none;
+  }
+
+  #symbol {
+    font-size: 40px;
+    color: white;
   }
 }
