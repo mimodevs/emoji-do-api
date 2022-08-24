@@ -108,8 +108,8 @@ header h1 {
   color: white;
 }
 
-#close {
-  display: none;
+.close {
+  display: none !important;
 }
 
 .menuitem:hover {
@@ -315,10 +315,7 @@ color: #FFFFFF;
   display:block;
 }
 
-.options-pop .symbol {
-  margin-left: 20px;
-  margin-top: 20px;
-}
+
 
 
 
@@ -494,7 +491,9 @@ color: #FFFFFF;
   }
   h3 {
     font-size: 55px;
+    margin-bottom: 0.5em;
   }
+  
   #fonts {
     height: 60px;
     width: 200px;
@@ -551,14 +550,25 @@ color: #FFFFFF;
   }
   .menu__box {
     display: flex;
+    left: 0;
     
   }
   #burger-menu {
-    display: none;
+    display: flex;
+
   }
 
   .symbol {
     font-size: 40px;
     color: white;
+
+  }
+
+  .burger-container .menu__btn {
+    display: none;
+  }
+
+  #burger-menu:checked + .menu__box  {
+    display: flex;
   }
 }
